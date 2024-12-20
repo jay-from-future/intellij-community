@@ -19,3 +19,8 @@ jobs:
           upload-result: true
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
+        timeout-minutes: 70
+      - uses: actions/upload-artifact@v4
+        with:
+          name: qodana-results
+          path: ${{ runner.temp }}/qodana/results
