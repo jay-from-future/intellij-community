@@ -4,7 +4,5 @@ disableSanityInspections: true
 properties:
   shared.index.git.hashes: false
   idea.batch.inspections.inspect.injected.psi: false
-plugins:
-  - id: com.intellij.uiDesigner
 profile:
   path: .idea/inspectionProfiles/idea_fatal_errors.yml
